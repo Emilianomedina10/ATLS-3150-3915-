@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <title>Birds</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -13,13 +16,11 @@
 
   <body>
     <div class="flex-container">
-      <!-- a) HEADER -->
-      <header role="banner">
+      <header>
         <h1>Birdwatching</h1>
         <img src="dove.png" alt="a simple dove logo" />
 
-        <!-- b) NAVIGATION -->
-        <nav aria-label="Primary" role="navigation">
+        <nav>
           <ul>
             <li><span>Home</span></li>
             <li><a href="#">Get started</a></li>
@@ -30,56 +31,73 @@
         </nav>
       </header>
 
-      <!-- wrapper to place main + aside side-by-side -->
       <div class="content-area">
-        <!-- c) MAIN CONTENT -->
-        <main role="main">
+        <main>
           <article>
-            <!-- d) WELCOME TEXT -->
             <header>
               <h2>Welcome</h2>
             </header>
 
             <p>
-              Welcome to our fake birdwatching site. If this were a real site, it would be the ideal place to come to learn more about birdwatching, whether you are a beginner looking to learn how to get into birding, or an expert wanting to share ideas, tips, and photos with other like-minded people.
+              Welcome to our fake birdwatching site. If this were a real site, it
+              would be the ideal place to come to learn more about birdwatching,
+              whether you are a beginner looking to learn how to get into birding,
+              or an expert wanting to share ideas, tips, and photos with other
+              like-minded people.
             </p>
 
             <p>
-              So don't waste time! Get what you need, then turn off that computer and get out into the great outdoors!
+              So don't waste time! Get what you need, then turn off that computer
+              and get out into the great outdoors!
             </p>
           </article>
         </main>
 
-        <!-- e) IMAGE SIDEBAR -->
-        <aside role="complementary" aria-labelledby="fav-photos">
-          <h2 id="fav-photos">Favourite photos</h2>
-
-          <section aria-labelledby="na-birds">
-            <h3 id="na-birds">North American Birds</h3>
+        <aside>
+          <h2>Favourite photos</h2>
+          <section>
+            <h3>North American Birds</h3>
             <a href="favorite-1.jpg">
-              <img src="favorite-1_th.jpg" alt="Small black bird, black claws, long slender black beak; links to larger version" />
+              <img
+                src="favorite-1_th.jpg"
+                alt="Small black bird, black claws, long slender black beak; links to larger version"
+              />
             </a>
             <a href="favorite-2.jpg">
-              <img src="favorite-2_th.jpg" alt="Top half of a bird with bright blue neck plumage, light beak, blue headdress; links to larger version" />
+              <img
+                src="favorite-2_th.jpg"
+                alt="Top half of a bird with bright blue neck plumage, light beak, blue headdress; links to larger version"
+              />
             </a>
           </section>
 
-          <section aria-labelledby="sa-birds">
-            <h3 id="sa-birds">South American Birds</h3>
+          <section>
+            <h3>South American Birds</h3>
             <a href="favorite-3.jpg">
-              <img src="favorite-3_th.jpg" alt="Top half of a large white-plumage bird, very long curved narrow light-colored beak; links to larger version" />
+              <img
+                src="favorite-3_th.jpg"
+                alt="Top half of a large white-plumage bird, very long curved narrow light-colored beak; links to larger version"
+              />
             </a>
             <a href="favorite-4.jpg">
-              <img src="favorite-4_th.jpg" alt="Large bird with mostly white plumage and black back/rear, long straight white beak; links to larger version" />
+              <img
+                src="favorite-4_th.jpg"
+                alt="Large bird with mostly white plumage and black back/rear, long straight white beak; links to larger version"
+              />
             </a>
           </section>
         </aside>
       </div>
 
-      <!-- f) FOOTER -->
-      <footer role="contentinfo">
-        <p>This fake website example is CC0 — any part of this code may be reused in any way you wish. Original example written by Chris Mills, 2016.</p>
-        <p><a href="http://game-icons.net/lorc/originals/dove.html">Dove icon</a> by Lorc.</p>
+      <footer>
+        <p>
+          This fake website example is CC0 — any part of this code may be reused
+          in any way you wish. Original example written by Chris Mills, 2016.
+        </p>
+        <p>
+          <a href="http://game-icons.net/lorc/originals/dove.html">Dove icon</a>
+          by Lorc.
+        </p>
       </footer>
     </div>
   </body>
