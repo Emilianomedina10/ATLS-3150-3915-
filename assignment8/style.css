@@ -41,7 +41,7 @@ header {
 header img {
   display: block;
   height: 60px;
-  padding-top: 20.15px;
+  padding-top: 20px;
 }
 
 nav {
@@ -55,6 +55,7 @@ nav ul {
   list-style-type: none;
   flex: 2;
   display: flex;
+  gap: 8px;
 }
 
 nav li {
@@ -73,11 +74,20 @@ nav a, nav span {
   color: black;
 }
 
+.content-area {
+  display: flex;       /* put main and aside side-by-side */
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+main {
+  flex: 3;             /* wider column */
+}
+
 article, section { flex: 4; }
 
 aside {
-  flex: 1;
-  margin-left: 10px;
+  flex: 1;             /* narrower sidebar */
   padding: 1%;
 }
 
@@ -91,21 +101,16 @@ aside img { max-width: 100%; }
 
 footer { margin-top: 10px; }
 
-body > * {
-  background-color: red;
+/* Step 18–19: green background on the container holding the whole page */
+.flex-container {
+  background-color: rgba(0, 255, 0, 0.5);
   padding: 1%;
+  display: flex;
+  flex-direction: column; /* stack header, content-area, footer vertically */
+  gap: 10px;
 }
 
 main, header, nav, article, aside, footer, section {
   background-color: rgba(0, 255, 0, 0.5);
   padding: 1%;
-}
-
-main { flex: 3; }
-
-.flex-container {
-  background-color: rgba(0, 255, 0, 0.5);
-  padding: 1%;
-  display: flex;
-  flex-wrap: wrap;
 }
